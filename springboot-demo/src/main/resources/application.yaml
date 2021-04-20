@@ -1,0 +1,27 @@
+
+#容器
+server:
+  port: 80
+  servlet:
+    context-path: /demo
+
+#日志
+logging:
+  level:   #map集合  key-value
+    com.demo: debug
+    #org.springframework: debug
+
+
+#静态资源
+
+#数据源
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    data-username: root
+    data-password: admin
+    url: jdbc:mysql://localhost:3306/mybatis?serverTimezone=UTC&userUnicode=true&charcterEncoding=utf-8
+
+
+
